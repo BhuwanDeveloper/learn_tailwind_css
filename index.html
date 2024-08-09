@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            content: ["./src/**/*.{html,js}"],
+          theme: {
+            extend: {
+              colors: {
+                golden: '#fdcf00',
+              }
+            }
+          }
+        }
+      </script>
+      <style type="text/tailwindcss"> 
+          @layer base {
+            h2{
+                @apply text-3xl bg-blue-500;
+            }
+          }
+      </style>
+</head>
+<body>
+    <h1 class="text-center text-2xl lg-4xl font-bold text-golden mt-4 ">Tailwind CSS</h1>
+    <h2>Custamized tailwind CSS</h2>
+    <p class="text-red-500">I am excited to learn tailwind css</p>
+    <button class="bg-golden p-2 rounded-md hover:bg-black hover:text-white transition-all delay-150 ease-in-out disabled:opacity-50 disabled:hover:text-black">Visit skillup labs</button>
+</body>
+</html>
